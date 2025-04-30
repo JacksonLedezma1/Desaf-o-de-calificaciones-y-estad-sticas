@@ -112,4 +112,24 @@ while(repetir==0):
     repetir=int(input("\nDeseas repetir?(si=0, no=cualquier numero)"))
     
 
-#
+print("Verificar y contar calificaciones específicas")
+#Verificar y contar calificaciones específicas
+repetir=0
+while(repetir==0):
+    # Lista de calificaciones
+    calificaciones = [85, 90, 78, 90, 92, 85, 100, 90, 88]
+
+    # Solicita una calificación al usuario
+    buscada = int(input("\nIngresa la calificación que deseas buscar: "))
+
+    contador = 0
+
+    for cal in calificaciones:
+        if cal != buscada:
+            continue  # Si no es la calificación buscada, pasa a la siguiente
+        contador += 1
+
+    # Muestra el resultado
+    print(f"La calificación {buscada} aparece {contador} veces .")
+    
+repetir=int(input("\nDeseas repetir?(si=0, no=cualquier numero)"))
