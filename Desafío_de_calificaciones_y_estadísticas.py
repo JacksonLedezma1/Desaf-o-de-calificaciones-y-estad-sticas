@@ -128,6 +128,8 @@ while(repetir==0):
         if cal != buscada:
             continue  # Si no es la calificación buscada, pasa a la siguiente
         contador += 1
+        else:
+            break
 
     # Muestra el resultado
     print(f"La calificación {buscada} aparece {contador} veces .")
